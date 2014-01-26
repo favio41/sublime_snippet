@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+fs.readFile(cachedFile,'utf8',function(err,data){
+	if(err)
+	{
+		//f.log(cc,"Fail to load cached file",err);
+		//return deferred.reject(err);
+	}
+	//f.log(cc,"response from cache...");
+	//deferred.resolve(JSON.parse(data));
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>readFile</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
