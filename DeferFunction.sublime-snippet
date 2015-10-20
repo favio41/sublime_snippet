@@ -3,7 +3,7 @@
 var defer = \$q.defer();
 res.\$promise = defer.promise;
 
-${1:api.query}.\$promise.then(function(results){
+${1:api.query()}.\$promise.then(function(results){
     angular.extend(res, results);
     defer.resolve(res);            
 });
