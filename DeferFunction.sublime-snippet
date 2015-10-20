@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[var res  = ${2:[]};
+var defer = \$q.defer();
+res.$promise = defer.promise;
+
+${1:api.query}.\$promise.then(function(results){
+    angular.extend(res, results);
+    defer.resolve(res);            
+});
+return res;
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>deferFunction</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
