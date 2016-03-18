@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[<pre ng-bind="$1$SELECTION | json"></pre>]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>toCode</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.html</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Translate tag</description>
+</snippet>
